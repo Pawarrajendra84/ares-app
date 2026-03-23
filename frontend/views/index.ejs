@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Data Display</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Data from Backend</h1>
+
+        <% if (data) { %>
+            <div class="data-item">
+                <pre><%= JSON.stringify(data, null, 2) %></pre>
+            </div>
+        <% } else { %>
+            <p>No data received</p>
+        <% } %>
+
+    </div>
+</body>
+</html>
